@@ -1,0 +1,21 @@
+1. All Linux VM's must be installed with the default settings that include the: 
+
+	1. Default hostname.
+	2. Default language and keyboard.
+	3. Default networking.
+
+2. All Linux VM's must be installed using customized partitioning layout using only one partition mounted at system root.
+
+3. Snapshots must be maintained of the VM's after the initial install with default settings with the name "clean-install".
+
+4. VMware Tools should be installed and all the steps required to install it must be in the description of the snapshot named "vmware-tools-installed".
+
+5. Any other changes must also be described in the corresponding snapshots.
+
+6. A user named "divyansh" and with full name "divyansh tiwari" should be created if required. 
+
+7. If networking is required before initial snapshots then run "dhclient" rather than making any permanent changes.
+
+8. The CD-ROM drive or attached iso file must not be set to "Connected at power on".
+
+9. If the initial state is a clone of a fresh VM then the snapshot must be named "clean-clone".
